@@ -19,7 +19,7 @@ public class JokesApi {
         this.service = service;
     }
 
-    @GetMapping("jokes")
+    @GetMapping("joke")
         public ResponseEntity<List<Joke>> allJokes(){
             return new ResponseEntity<>(service.getAllJokes(), HttpStatus.OK);
         }
